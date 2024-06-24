@@ -70,8 +70,10 @@ public class GamePanel extends JPanel implements Runnable{
             ball.setYDirection(-ball.yVelocity);
         }
         if (ball.y >= GAME_HEIGHT - BALL_DIAMETER) {
-            ball.setYDirection(ball.yVelocity);
+            ball.setYDirection(-ball.yVelocity);
         }
+
+
 
         // bounces ball off paddles
         if(ball.intersects(paddle1)) {
