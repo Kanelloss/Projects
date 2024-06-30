@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Εισαγωγή Επαφής</title>
+    <link rel="stylesheet" href="./mobile.css">
+</head>
+<body>
+
+    <div class="outer">
+
+        <div class="menu">
+            <ul>
+                <li><a class="insert-link" href="">Εισαγωγή Επαφής</a></li>
+                <li><a class="search-link" href="">Αναζήτηση Επαφής</a></li>
+                <li><a class="showall-link" href="">Προβολή Επαφών</a></li>
+            </ul>
+        </div>
+    
+
+        <form action="" class="insert-contact-form hidden">
+            <section>
+                <h1>Εισαγωγή Επαφής</h1>
+                <fieldset>
+                    <legend>Στοιχεία Επαφής</legend>
+                    <div>
+                        <label for="firstname">Όνομα:</label>
+                        <input type="text" name="" id="firstname" size="30"  maxlength="40">
+                    </div>
+
+                    <div>
+                        <label for="lastname">Επώνυμο:</label>
+                        <input type="text" name="" id="lastname" size="30"  maxlength="40">
+                    </div>
+
+                    <div>
+                        <label for="phoneNumber">Τηλέφωνο:</label>
+                        <input type="text" name="" id="phoneNumber" size="20"  maxlength="15">
+                    </div>
+                </fieldset>
+
+                <div class="btn-wrapper">
+                    <button id="btn" type="button">Αποστολή</button>
+                </div>
+            </section>
+        </form>
+
+        <div class="search-wrapper hidden">
+            <form action="">
+                <input type="text" id="searchInput" class="search rounded" placeholder="Πληκτρολογήστε ένα τηλέφωνο" autofocus>
+            </form>
+        </div>
+    </div>
+
+    <table class="contacts-table">
+
+    </table>
+
+    <div class="not-found m-top hidden">
+        <span>Δε βρέθηκαν επαφές σύμφωνα με τα κριτήρια αναζήτησης.</span>
+    </div>
+
+    <div class="found-identical m-top hidden">
+        <span>Βρέθηκαν επαφές με το ίδιο τηλέφωνο.</span>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script src="./mobile.js"></script>
+</body>
+</html>
